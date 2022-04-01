@@ -109,10 +109,9 @@ return require('packer').startup(function(use)
   -- auto complete
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", config = get_config("cmp") } -- The completion plugin
-  use { "hrsh7th/cmp-buffer", after = "nvim-cmp" } -- buffer completions
   use { "hrsh7th/cmp-path", after = "nvim-cmp" } -- path completions
+  use { "hrsh7th/cmp-nvim-lsp", config = get_config("cmp-nvim-lsp") }
   use { "saadparwaiz1/cmp_luasnip", after = "nvim-cmp" } -- snippet completions
-  use { "hrsh7th/cmp-nvim-lsp", config = get_config("cmp-nvim-lsp"), after = "nvim-cmp" }
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
