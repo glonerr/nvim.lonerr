@@ -67,15 +67,14 @@ return require('packer').startup(function(use)
 
   -- nvim-tree
   use {
-    'kyazdani42/nvim-tree.lua',
-    lock = true,
+    'glonerr/nvim-tree-r.lua',
     config = get_config('nvim-tree')
   }
 
   -- colorscheme
   use 'folke/tokyonight.nvim'
   use 'EdenEast/nightfox.nvim'
-  use 'Mofiqul/dracula.nvim'
+  use 'glonerr/dracula-r.nvim'
   use 'navarasu/onedark.nvim'
 
   -- floaterm
