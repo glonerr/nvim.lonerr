@@ -76,6 +76,13 @@ require'nvim-tree'.setup {
     mappings = {
       custom_only = false,
       list = {
+	{key = "<c-x>", cb = "" },
+ 	{key = "<c-o>", cb = tree_cb("dir_up")},
+ 	{key = "-", cb = "" },
+ 	{key = "<2-leftmouse>", cb = ""},
+ 	{key = "<2-rightmouse>", cb = ""},
+ 	{key = "o", cb = ""},
+ 	{key = "<cr>", cb = ""},
 -- 	{key = "l", cb = tree_cb("edit")},
 -- 	{key = "<C-]>", cb = tree_cb("cd")},
 -- 	{key = "<C-v>", cb = tree_cb("vsplit")},
