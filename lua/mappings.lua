@@ -60,3 +60,8 @@ map("n", "<f1>", ":FloatermNew! --height=0.9 --width=0.9 --cwd=<root><cr>", def_
 
 -- translate
 map("n", "<c-t>", "viw:Translate zh -source=en -output=floating<cr>", def_opt)
+
+-- system copy paste
+map("n", "sy", "\"*y", def_opt)
+map("n", "sp", "\"*p", def_opt)
+
